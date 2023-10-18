@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #screen{
+            background-color:white;
+            color:blue;
+            width: 423px;
+            height: 50px;
+        }
+        #f{
+            margin-left: 620px;  
+        }
+        #btn{
+            background-color:wheat;
+            padding: 4%;
+            
+        }
+        #btn1{
+            background-color:wheat;
+            padding: 4%;
+            
+        }
+        #btn2{
+            background-color:lightgoldenrodyellow;
+            padding: 4%;
+            
+        }
+        #btn4{
+            background-color:wheat;
+            padding: 4%;
+            
+        }
+    </style>
+</head>
+<body>
+    <form id="f">
+        <input type="text" id="screen">
+        <br>
+        <input type="button" id="btn" value="1" onclick="demo(1)">
+        <input type="button" id="btn" value="2" onclick="demo(2)">
+        <input type="button" id="btn" value="3" onclick="demo(3)">
+        <input type="button" id="btn" value="4" onclick="demo(4)">
+        <input type="button" id="btn" value="5" onclick="demo(5)">
+        <br>
+        <input type="button" id="btn" value="6" onclick="demo(6)">
+        <input type="button" id="btn" value="7" onclick="demo(7)">
+        <input type="button" id="btn" value="8" onclick="demo(8)">
+        <input type="button" id="btn" value="9" onclick="demo(9)">
+        <input type="button" id="btn" value="0" onclick="demo(0)">
+        <br>
+        <input type="button" id="btn1" value="+" onclick="demo('+')">
+        <input type="button" id="btn1" value="-" onclick="demo('-')">
+        <input type="button" id="btn1" value="*" onclick="demo('*')">
+        <input type="button" id="btn1" value="/" onclick="demo('/')">
+        <input type="button" id="btn1" value="00" onclick="demo('00')">
+        <br>
+        <input type="button" id="btn4" value="." onclick="demo('.')">
+        <input type="button" id="btn4" value="=" onclick="demo1('=')">
+        <input type="reset" id="btn2" value="Clear">
+
+
+
+    </form>
+    <script>
+        function demo(num){
+            document.getElementById('screen').value+=num
+        }
+        function demo1(){
+            document.getElementById('screen').value=eval( document.getElementById('screen').value)
+        }
+    </script>
+</body>
+</html>
